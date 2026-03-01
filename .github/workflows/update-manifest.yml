@@ -1,0 +1,30 @@
+name: Update Assets Manifest
+
+on:
+  push:
+    paths:
+      - 'sdks/**'
+      - 'ddis/**'
+      - 'gen_manifest.go'
+  workflow_dispatch: # Permite ejecutarlo manualmente
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+
+      - name: Generate Manifest
+        run: go run gen_manifest.go
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "auto: update assets.json manifest [skip ci]"
+          file_pattern: 'assets.json'
