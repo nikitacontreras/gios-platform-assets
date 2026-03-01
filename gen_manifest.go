@@ -48,7 +48,8 @@ func calculateMD5(path string) string {
 
 func main() {
 	manifest := Manifest{}
-	repoURL := "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0"
+	// Usamos la URL raw de GitHub apuntando a la rama main
+	baseURL := "https://raw.githubusercontent.com/nikitacontreras/gios-platform-assets/main"
 	platforms := []string{"iPhoneOS", "AppleTVOS", "WatchOS"}
 
 	// Scan SDKs per platform
@@ -56,12 +57,18 @@ func main() {
 		dir := filepath.Join("sdk", p)
 		files, _ := ioutil.ReadDir(dir)
 		for _, f := range files {
-			if f.IsDir() && strings.HasSuffix(f.Name(), ".sdk") {
-				// In a real environment, we'd hash the .tar.xz file here
+			// Si es un directorio .sdk o un archivo .tar.xz/.zip
+			if (f.IsDir() && strings.HasSuffix(f.Name(), ".sdk")) || strings.HasSuffix(f.Name(), ".tar.xz") {
+				name := f.Name()
+				// Si es carpeta, el link debe ser al archivo comprimido que gios espera
+				if f.IsDir() {
+					name = name + ".tar.xz"
+				}
+				
 				manifest.SDKs = append(manifest.SDKs, Asset{
 					Name:     f.Name(),
 					Platform: p,
-					URL:      fmt.Sprintf("%s/%s.tar.xz", repoURL, f.Name()),
+					URL:      fmt.Sprintf("%s/sdk/%s/%s", baseURL, p, name),
 				})
 			}
 		}
@@ -74,11 +81,12 @@ func main() {
 				fullPath := filepath.Join(ddiDir, f.Name())
 				hash := calculateMD5(fullPath)
 				version := strings.TrimSuffix(f.Name(), ".zip")
+				
 				manifest.DDIs = append(manifest.DDIs, DDI{
 					Version:  version,
 					Platform: p,
-					URL:      fmt.Sprintf("%s/%s.zip", repoURL, version),
-					SigURL:   fmt.Sprintf("%s/%s.zip.signature", repoURL, version),
+					URL:      fmt.Sprintf("%s/ddi/%s/%s", baseURL, p, f.Name()),
+					SigURL:   fmt.Sprintf("%s/ddi/%s/%s.signature", baseURL, p, f.Name()),
 					Hash:     hash,
 				})
 			}
@@ -87,5 +95,5 @@ func main() {
 
 	data, _ := json.MarshalIndent(manifest, "", "  ")
 	ioutil.WriteFile("assets.json", data, 0644)
-	fmt.Println("[+] assets.json updated with multi-platform support!")
+	fmt.Println("[+] assets.json updated with Raw GitHub URLs!")
 }
