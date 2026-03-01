@@ -53,7 +53,7 @@ func main() {
 
 	// Scan SDKs per platform
 	for _, p := range platforms {
-		dir := filepath.Join("sdks", p)
+		dir := filepath.Join("sdk", p)
 		files, _ := ioutil.ReadDir(dir)
 		for _, f := range files {
 			if f.IsDir() && strings.HasSuffix(f.Name(), ".sdk") {
@@ -67,7 +67,7 @@ func main() {
 		}
 
 		// Scan DDIs per platform
-		ddiDir := filepath.Join("ddis", p)
+		ddiDir := filepath.Join("ddi", p)
 		ddiFiles, _ := ioutil.ReadDir(ddiDir)
 		for _, f := range ddiFiles {
 			if !f.IsDir() && strings.HasSuffix(f.Name(), ".zip") {

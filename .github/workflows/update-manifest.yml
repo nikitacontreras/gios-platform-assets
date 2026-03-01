@@ -3,10 +3,13 @@ name: Update Assets Manifest
 on:
   push:
     paths:
-      - 'sdks/**'
-      - 'ddis/**'
+      - 'sdk/**'
+      - 'ddi/**'
       - 'gen_manifest.go'
   workflow_dispatch: # Permite ejecutarlo manualmente
+
+permissions:
+  contents: write
 
 jobs:
   build:
