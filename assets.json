@@ -1,4 +1,803 @@
 {
-  "sdks": null,
-  "ddis": null
+  "sdks": [
+    {
+      "name": "iPhoneOS10.3.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS10.3.sdk.tar.xz"
+    },
+    {
+      "name": "iPhoneOS11.4.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS11.4.sdk.tar.xz"
+    },
+    {
+      "name": "iPhoneOS12.4.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS12.4.sdk.tar.xz"
+    },
+    {
+      "name": "iPhoneOS13.7.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS13.7.sdk.tar.xz"
+    },
+    {
+      "name": "iPhoneOS14.5.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS14.5.sdk.tar.xz"
+    },
+    {
+      "name": "iPhoneOS15.6.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS15.6.sdk.tar.xz"
+    },
+    {
+      "name": "iPhoneOS16.5.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS16.5.sdk.tar.xz"
+    },
+    {
+      "name": "iPhoneOS9.3.sdk",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/iPhoneOS9.3.sdk.tar.xz"
+    },
+    {
+      "name": "AppleTVOS10.2.sdk",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/AppleTVOS10.2.sdk.tar.xz"
+    },
+    {
+      "name": "AppleTVOS11.4.sdk",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/AppleTVOS11.4.sdk.tar.xz"
+    },
+    {
+      "name": "AppleTVOS12.4.sdk",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/AppleTVOS12.4.sdk.tar.xz"
+    }
+  ],
+  "ddis": [
+    {
+      "version": "10.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.0.zip.signature",
+      "hash": "a2a74a2897d74aa8ef11c4815989bb36"
+    },
+    {
+      "version": "10.1",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.1.zip.signature",
+      "hash": "3c08690602bef111cdbcaed75f03e4cc"
+    },
+    {
+      "version": "10.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.2.zip.signature",
+      "hash": "adf0f2a714098eaaf9234f10248e07f2"
+    },
+    {
+      "version": "10.3",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.3.zip.signature",
+      "hash": "803b1b06e84702938a331db80ab18f1d"
+    },
+    {
+      "version": "11.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.0.zip.signature",
+      "hash": "0491cb92923098d1140ad2c5beb25237"
+    },
+    {
+      "version": "11.1",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.1.zip.signature",
+      "hash": "508ea58c3d8723a9b2e075c39e40201d"
+    },
+    {
+      "version": "11.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.2.zip.signature",
+      "hash": "f3fd8d44c552bdb949185ad034a69354"
+    },
+    {
+      "version": "11.3",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.3.zip.signature",
+      "hash": "0258837793fd000ac3e0d6df3da75bfa"
+    },
+    {
+      "version": "11.4",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.4.zip.signature",
+      "hash": "d436c215e1df385888faac504801345d"
+    },
+    {
+      "version": "12.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.0.zip.signature",
+      "hash": "2d287e2d6cb5866a435ec6ef7628b35d"
+    },
+    {
+      "version": "12.1",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.1.zip.signature",
+      "hash": "76820c34fc1da76fadb1b864ca9709e5"
+    },
+    {
+      "version": "12.2 (16E226)",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.2 (16E226).zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.2 (16E226).zip.signature",
+      "hash": "1aabd181ddd5a1fd526838c0631827b8"
+    },
+    {
+      "version": "12.3",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.3.zip.signature",
+      "hash": "95a145bf93bf848c570565366d7c8fcd"
+    },
+    {
+      "version": "13.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.0.zip.signature",
+      "hash": "983909e6efa9b3e4161bdba12bdebb09"
+    },
+    {
+      "version": "13.1.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.1.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.1.2.zip.signature",
+      "hash": "dcec27914f393c3a1b4fc8891fa21103"
+    },
+    {
+      "version": "13.1",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.1.zip.signature",
+      "hash": "1648704bf85f4f65890395c76b56a502"
+    },
+    {
+      "version": "13.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.2.zip.signature",
+      "hash": "7b493c35561e7e633abe9f5a7c629ff0"
+    },
+    {
+      "version": "13.3",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.3.zip.signature",
+      "hash": "c168b08c07d7560f32d51fa8de31f8f3"
+    },
+    {
+      "version": "13.4",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.4.zip.signature",
+      "hash": "4f4879712c022108dc6d47c93d56af2c"
+    },
+    {
+      "version": "13.5",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.5.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.5.zip.signature",
+      "hash": "cb34eb98b13661c2a3cf51e5396f1110"
+    },
+    {
+      "version": "13.6",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.6.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.6.zip.signature",
+      "hash": "bfe52e4b88f5924a4bb103ded16b04c7"
+    },
+    {
+      "version": "13.7",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.7.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.7.zip.signature",
+      "hash": "03231232eec8991713004674305bf14f"
+    },
+    {
+      "version": "14.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.0.zip.signature",
+      "hash": "d6c5f3efff76b56c98fdc7be20ac7845"
+    },
+    {
+      "version": "14.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.2.zip.signature",
+      "hash": "d6de7035c11cb7b7e4d5ee08c8c02bb7"
+    },
+    {
+      "version": "14.3",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.3.zip.signature",
+      "hash": "8199b226f888905a9e7ae780f62820d7"
+    },
+    {
+      "version": "14.4",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.4.zip.signature",
+      "hash": "3e8406fa675a67f17c99df73393d1df1"
+    },
+    {
+      "version": "14.5",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.5.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.5.zip.signature",
+      "hash": "9564d107e4c816dcb4f6879e03543332"
+    },
+    {
+      "version": "14.6",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.6.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.6.zip.signature",
+      "hash": "28e70f0b707568024ea073b29dd69021"
+    },
+    {
+      "version": "14.7",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.7.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.7.zip.signature",
+      "hash": "d8993ff4c2528cb61a410a0a8d5e8be1"
+    },
+    {
+      "version": "15.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.0.zip.signature",
+      "hash": "67134d00aa6a0650533fdd3e921e3a08"
+    },
+    {
+      "version": "15.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.2.zip.signature",
+      "hash": "81b038afec42add791bbf1b816c84086"
+    },
+    {
+      "version": "15.4",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.4.zip.signature",
+      "hash": "fcef86135f0bb0c5c474aff0ba43c7ce"
+    },
+    {
+      "version": "15.5",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.5.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.5.zip.signature",
+      "hash": "d6657c2a376f43d4364bf7af57b015ad"
+    },
+    {
+      "version": "16.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.0.zip.signature",
+      "hash": "5631a9578eb65d48f1f8282a86d04f6c"
+    },
+    {
+      "version": "16.1",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.1.zip.signature",
+      "hash": "2c04e37abf04507049542b2fedbc434b"
+    },
+    {
+      "version": "16.4",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.4.zip.signature",
+      "hash": "8105efff510c3ee7df9999d19ba5e216"
+    },
+    {
+      "version": "8.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.0.zip.signature",
+      "hash": "98e0fd3c9e5648353927b6b42ea97dcb"
+    },
+    {
+      "version": "8.1",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.1.zip.signature",
+      "hash": "63110640210701dc75fa64c8c09dc2b6"
+    },
+    {
+      "version": "8.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.2.zip.signature",
+      "hash": "75d43cea3c2ef5e518eaabf9937d1fd4"
+    },
+    {
+      "version": "8.3",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.3.zip.signature",
+      "hash": "40786f5c88eab3ac8bfa6544ce7b979e"
+    },
+    {
+      "version": "8.4",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.4.zip.signature",
+      "hash": "aa42917dbf20c1e0636ebb885e888ea1"
+    },
+    {
+      "version": "9.0",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.0.zip.signature",
+      "hash": "7e51965df1e9ce5d07e232deda5c2a9f"
+    },
+    {
+      "version": "9.1",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.1.zip.signature",
+      "hash": "de1bff505a528b7117b74152d2546a8b"
+    },
+    {
+      "version": "9.2",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.2.zip.signature",
+      "hash": "66b380c369d833dae8b6e79a4757334b"
+    },
+    {
+      "version": "9.3",
+      "platform": "iPhoneOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.3.zip.signature",
+      "hash": "9df655a602f5dfd3ec214a54ace0f42d"
+    },
+    {
+      "version": "10.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.0.zip.signature",
+      "hash": "238d4c83cd6be973fb63645fc8987efe"
+    },
+    {
+      "version": "10.1",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.1.zip.signature",
+      "hash": "af07a4964700ee05a286dac4f364b0a7"
+    },
+    {
+      "version": "10.2",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/10.2.zip.signature",
+      "hash": "985f65c0995c031982ab5833ae59be02"
+    },
+    {
+      "version": "11.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.0.zip.signature",
+      "hash": "1e6de4b4b937038ffa559295c3c5ca40"
+    },
+    {
+      "version": "11.1",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.1.zip.signature",
+      "hash": "1167d878fda1133e8095184d84cad8c3"
+    },
+    {
+      "version": "11.2",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.2.zip.signature",
+      "hash": "13a8c6a3162894a85a71666ee1721358"
+    },
+    {
+      "version": "11.3",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.3.zip.signature",
+      "hash": "ee0740a1e750ca01d4e5412b09964e2a"
+    },
+    {
+      "version": "11.4",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/11.4.zip.signature",
+      "hash": "7e767fbd4fc40a6556470e8ab073bd2c"
+    },
+    {
+      "version": "12.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.0.zip.signature",
+      "hash": "e5d4ea5ff205f0b810d6deb836ed0867"
+    },
+    {
+      "version": "12.1",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.1.zip.signature",
+      "hash": "fd03139d6d4153c01445f9aa8766900f"
+    },
+    {
+      "version": "12.2 (16L225)",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.2 (16L225).zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.2 (16L225).zip.signature",
+      "hash": "a3b8ce9f6ae1a260efa8aa39e819daff"
+    },
+    {
+      "version": "12.3",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/12.3.zip.signature",
+      "hash": "337df462193266b98f9614bf013545cc"
+    },
+    {
+      "version": "13.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.0.zip.signature",
+      "hash": "e251069358722a7271210508deb48fb0"
+    },
+    {
+      "version": "13.2",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.2.zip.signature",
+      "hash": "6b171d647dc2a6fae2253d0efbb8cc8b"
+    },
+    {
+      "version": "13.3",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.3.zip.signature",
+      "hash": "d8d23fcdeb44760d5d1cd786238b4211"
+    },
+    {
+      "version": "13.4",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/13.4.zip.signature",
+      "hash": "15017ec2e83694f4db9a93ce43b8a22e"
+    },
+    {
+      "version": "14.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.0.zip.signature",
+      "hash": "cf924751ce6ada7dde7ebf19562e87c6"
+    },
+    {
+      "version": "14.2",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.2.zip.signature",
+      "hash": "47291b64fed2c090a70113b214185c1d"
+    },
+    {
+      "version": "14.3",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.3.zip.signature",
+      "hash": "4fff6fcb3c04a0949a06c392ce8b1e64"
+    },
+    {
+      "version": "14.4",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.4.zip.signature",
+      "hash": "3213a93f97e4200fa7a514e61525b016"
+    },
+    {
+      "version": "14.5",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.5.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.5.zip.signature",
+      "hash": "ccd08b37cdb8870244ac6f828c4eae66"
+    },
+    {
+      "version": "14.6",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.6.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.6.zip.signature",
+      "hash": "888df1a90f059908d0a2c804c214945d"
+    },
+    {
+      "version": "14.7",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.7.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/14.7.zip.signature",
+      "hash": "d010a580c0272241d272423c713435bb"
+    },
+    {
+      "version": "15.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.0.zip.signature",
+      "hash": "f133f36670b37a06c514726b00c6b6e7"
+    },
+    {
+      "version": "15.2",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.2.zip.signature",
+      "hash": "faf7953a710985a420406be14b2fd0f9"
+    },
+    {
+      "version": "15.4",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.4.zip.signature",
+      "hash": "cc16a9e6d37d322a75f832d674eba81a"
+    },
+    {
+      "version": "15.6",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.6.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/15.6.zip.signature",
+      "hash": "87973f93808cec83450719bff74cf737"
+    },
+    {
+      "version": "16.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.0.zip.signature",
+      "hash": "44a6120f3b46481ed0767108879e6bd5"
+    },
+    {
+      "version": "16.1",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.1.zip.signature",
+      "hash": "5d8346d0df4242cd7238dea8861318fa"
+    },
+    {
+      "version": "16.4",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/16.4.zip.signature",
+      "hash": "36ae05249189ad3248110d68962ab0f2"
+    },
+    {
+      "version": "9.0",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.0.zip.signature",
+      "hash": "0b3f9c71ba0a7029c41d86709ab255dd"
+    },
+    {
+      "version": "9.1",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.1.zip.signature",
+      "hash": "166318e79552daaa583bd7e9415a04da"
+    },
+    {
+      "version": "9.2",
+      "platform": "AppleTVOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.2.zip.signature",
+      "hash": "d77caeee84b8c95f4767760ea9e7c147"
+    },
+    {
+      "version": "2.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/2.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/2.0.zip.signature",
+      "hash": "abcb68974a0626bd6e7c1b13cd398fe4"
+    },
+    {
+      "version": "2.1",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/2.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/2.1.zip.signature",
+      "hash": "3ea842a7c6bc9d49966b4aa903614a25"
+    },
+    {
+      "version": "2.2",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/2.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/2.2.zip.signature",
+      "hash": "e96bae69ad734d44d4781f827078ffe8"
+    },
+    {
+      "version": "3.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/3.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/3.0.zip.signature",
+      "hash": "5b13171d47493575ff3e906f564a3b23"
+    },
+    {
+      "version": "3.1",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/3.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/3.1.zip.signature",
+      "hash": "e08f9a36b3e2ed0a58d631b499e8a73d"
+    },
+    {
+      "version": "3.2",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/3.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/3.2.zip.signature",
+      "hash": "66e2714e0cba4613b4e80ff8cb2338d2"
+    },
+    {
+      "version": "4.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.0.zip.signature",
+      "hash": "73aa1f3e53637009407513083aed07d2"
+    },
+    {
+      "version": "4.1",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.1.zip.signature",
+      "hash": "340f9fb66971a3b550d7901bd56dd727"
+    },
+    {
+      "version": "4.2",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.2.zip.signature",
+      "hash": "e7ba86a6b8b0a14f05e186ae81ba8512"
+    },
+    {
+      "version": "4.3",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/4.3.zip.signature",
+      "hash": "b670198d8a18fdc440c510ed0ad40c53"
+    },
+    {
+      "version": "5.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/5.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/5.0.zip.signature",
+      "hash": "4d2106fa83b9c4dcac3efe20c568ee38"
+    },
+    {
+      "version": "5.1",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/5.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/5.1.zip.signature",
+      "hash": "abcdece488bf3becbc738f21ef763e04"
+    },
+    {
+      "version": "5.2 (16T224)",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/5.2 (16T224).zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/5.2 (16T224).zip.signature",
+      "hash": "6ea9a7dee43287036407b8e63befd3c2"
+    },
+    {
+      "version": "6.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/6.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/6.0.zip.signature",
+      "hash": "545df57b54643034c8b072470c78a4cf"
+    },
+    {
+      "version": "6.1",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/6.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/6.1.zip.signature",
+      "hash": "c0b6bd6a89fb79c1a2308f8f49dd3b4a"
+    },
+    {
+      "version": "6.2",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/6.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/6.2.zip.signature",
+      "hash": "401a93d96b6293e3a8912185f99c24be"
+    },
+    {
+      "version": "7.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.0.zip.signature",
+      "hash": "5d1257b8620414f4769a95355c90c399"
+    },
+    {
+      "version": "7.1",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.1.zip.signature",
+      "hash": "ac06afad65be7fc632d733deafe75037"
+    },
+    {
+      "version": "7.2",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.2.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.2.zip.signature",
+      "hash": "fdcab3cf69346be006b5470549acebd0"
+    },
+    {
+      "version": "7.3",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.3.zip.signature",
+      "hash": "51241fcff7e64a438700a9283bfaebb6"
+    },
+    {
+      "version": "7.4",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/7.4.zip.signature",
+      "hash": "d9abc9022c64b37efb960dbdac34e75c"
+    },
+    {
+      "version": "8.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.0.zip.signature",
+      "hash": "9bec48307537da5c9e2195958b7e6e58"
+    },
+    {
+      "version": "8.3",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.3.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.3.zip.signature",
+      "hash": "f4d85ccfafe0380bd215bd6726c54fb6"
+    },
+    {
+      "version": "8.5",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.5.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.5.zip.signature",
+      "hash": "49572c69eb7dfb124f1bc8844bf021c6"
+    },
+    {
+      "version": "8.7",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.7.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/8.7.zip.signature",
+      "hash": "75a5e7f0e55ec780d2ba559fd8ed241e"
+    },
+    {
+      "version": "9.0",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.0.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.0.zip.signature",
+      "hash": "274fb0858d3805e8497fc0e5c473e2c3"
+    },
+    {
+      "version": "9.1",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.1.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.1.zip.signature",
+      "hash": "229e0a4731d4e3ae0a0f00c91ee217a2"
+    },
+    {
+      "version": "9.4",
+      "platform": "WatchOS",
+      "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.4.zip",
+      "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/download/v1.0/9.4.zip.signature",
+      "hash": "153d9e270dc0f83a5e2d0ecc6e500f59"
+    }
+  ]
 }
