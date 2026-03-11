@@ -6,7 +6,7 @@ on:
       - 'sdk/**'
       - 'ddi/**'
       - 'gen_manifest.go'
-  workflow_dispatch: # Permite ejecutarlo manualmente
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,18 +16,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
-          go-version: '1.20'
+          go-version: '1.21'
+          cache: true
+
+      - name: Compress SDKs
+        run: |
+          echo "Compressing SDK folders and generating signatures..."
+          find sdk -name "*.sdk" -type d | while read dir; do
+            if [ ! -f "${dir}.tar.xz" ]; then
+              echo "Packaging ${dir}..."
+              tar -cJf "${dir}.tar.xz" -C "$(dirname "${dir}")" "$(basename "${dir}")"
+            fi
+            echo "Signing ${dir}..."
+            md5sum "${dir}.tar.xz" | awk '{print $1}' > "${dir}.tar.xz.signature"
+          done
 
       - name: Generate Manifest
         run: go run gen_manifest.go
 
-      - name: Commit and Push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Commit assets.json
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "auto: update assets.json manifest [skip ci]"
           file_pattern: 'assets.json'
+
+      - name: Release Assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          files: |
+            sdk/**/*.tar.xz
+            ddi/**/*.zip
+            ddi/**/*.signature
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
