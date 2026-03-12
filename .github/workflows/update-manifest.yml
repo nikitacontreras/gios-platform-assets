@@ -26,16 +26,19 @@ jobs:
           go-version: '1.21'
           cache: true
 
-      - name: Compress SDKs
+      - name: Compress SDKs & Sign DDIs
         run: |
-          echo "Compressing SDK folders and generating signatures..."
+          echo "Processing SDKs..."
           find sdk -name "*.sdk" -type d | while read dir; do
             if [ ! -f "${dir}.tar.xz" ]; then
-              echo "Packaging ${dir}..."
               tar -cJf "${dir}.tar.xz" -C "$(dirname "${dir}")" "$(basename "${dir}")"
             fi
-            echo "Signing ${dir}..."
             md5sum "${dir}.tar.xz" | awk '{print $1}' > "${dir}.tar.xz.signature"
+          done
+
+          echo "Signing DDIs..."
+          find ddi -name "*.zip" -type f | while read file; do
+            md5sum "$file" | awk '{print $1}' > "${file}.signature"
           done
 
       - name: Generate Manifest
@@ -53,9 +56,10 @@ jobs:
           tag_name: latest
           files: |
             sdk/**/*.tar.xz
+            sdk/**/*.tar.xz.signature
             ddi/**/*.zip
             ddi/**/*.signature
           prerelease: false
-          generate_release_notes: true
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
