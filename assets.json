@@ -5,77 +5,77 @@
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS10.3.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS10.3.sdk.tar.xz.signature",
-      "hash": "0c80969645b82630bdd4d4ef6c0c7579"
+      "hash": "e5677102a7fa10b3eaf7eb7f1e0c1831"
     },
     {
       "name": "iPhoneOS11.4.sdk",
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS11.4.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS11.4.sdk.tar.xz.signature",
-      "hash": "1e599338fc4fc597fdd38a1a78187186"
+      "hash": "8991eb7acc616ca067e48f150cfb49b0"
     },
     {
       "name": "iPhoneOS12.4.sdk",
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS12.4.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS12.4.sdk.tar.xz.signature",
-      "hash": "51518ac2d75ffe93305e69cdb0d7182e"
+      "hash": "f7679f559bc52bc9260ba3a1b5e5ee1b"
     },
     {
       "name": "iPhoneOS13.7.sdk",
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS13.7.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS13.7.sdk.tar.xz.signature",
-      "hash": "a64b098eb07f7c7fc03d2b466dd618d2"
+      "hash": "656f1a2f2fca8c7d02744d0bc5263ab7"
     },
     {
       "name": "iPhoneOS14.5.sdk",
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS14.5.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS14.5.sdk.tar.xz.signature",
-      "hash": "830916625562c07fb13a2f818211fb5f"
+      "hash": "135938dd17144d413107bbff45b2af95"
     },
     {
       "name": "iPhoneOS15.6.sdk",
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS15.6.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS15.6.sdk.tar.xz.signature",
-      "hash": "748490fd71a3355eb271a50b0bf630af"
+      "hash": "cc3f7ca2b63c8633503fde9f40b8618b"
     },
     {
       "name": "iPhoneOS16.5.sdk",
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS16.5.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS16.5.sdk.tar.xz.signature",
-      "hash": "79e711ed436bd2d0e0ebcbf038a0b72e"
+      "hash": "3e6611ba18f132c1315b33eea4f8caeb"
     },
     {
       "name": "iPhoneOS9.3.sdk",
       "platform": "iPhoneOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS9.3.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/iPhoneOS9.3.sdk.tar.xz.signature",
-      "hash": "0612669931ada0ed202bd439d36fcc52"
+      "hash": "cddf09b784042ae18240298f5c16f16d"
     },
     {
       "name": "AppleTVOS10.2.sdk",
       "platform": "AppleTVOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/AppleTVOS10.2.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/AppleTVOS10.2.sdk.tar.xz.signature",
-      "hash": "bc9cf386d873a710c72adbeff305cbe1"
+      "hash": "d400e226af849a284be0ac3aaa459fcf"
     },
     {
       "name": "AppleTVOS11.4.sdk",
       "platform": "AppleTVOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/AppleTVOS11.4.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/AppleTVOS11.4.sdk.tar.xz.signature",
-      "hash": "e50c0e9fae204425cef2395de5f5d27f"
+      "hash": "1f1c402a745013520cef584d9aeed1eb"
     },
     {
       "name": "AppleTVOS12.4.sdk",
       "platform": "AppleTVOS",
       "url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/AppleTVOS12.4.sdk.tar.xz",
       "sig_url": "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download/AppleTVOS12.4.sdk.tar.xz.signature",
-      "hash": "1417b121d61eb980e4c096476ea16fb8"
+      "hash": "545d98492c97628f8a6a73c4debc9633"
     }
   ],
   "ddis": [
