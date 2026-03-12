@@ -40,18 +40,32 @@ jobs:
 
       - name: Compress SDKs & Sign DDIs
         run: |
-          echo "Processing SDKs..."
-          find sdk -name "*.sdk" -type d | while read dir; do
+          # Detect number of cores
+          CORES=$(nproc)
+          echo "Using $CORES parallel jobs..."
+
+          echo "Processing SDKs in parallel..."
+          # Define worker function for SDKs
+          process_sdk() {
+            dir="$1"
             if [ ! -f "${dir}.tar.xz" ]; then
+              echo "Comprimiendo $dir..."
               tar -cJf "${dir}.tar.xz" -C "$(dirname "${dir}")" "$(basename "${dir}")"
             fi
             md5sum "${dir}.tar.xz" | awk '{print $1}' > "${dir}.tar.xz.signature"
-          done
+          }
+          export -f process_sdk
+          find sdk -name "*.sdk" -type d | xargs -P "$CORES" -I {} bash -c 'process_sdk "{}"'
 
-          echo "Signing DDIs..."
-          find ddi -name "*.zip" -type f | while read file; do
+          echo "Signing DDIs in parallel..."
+          # Define worker function for DDIs
+          sign_ddi() {
+            file="$1"
+            echo "Firmando $file..."
             md5sum "$file" | awk '{print $1}' > "${file}.signature"
-          done
+          }
+          export -f sign_ddi
+          find ddi -name "*.zip" -type f | xargs -P "$CORES" -I {} bash -c 'sign_ddi "{}"'
 
       - name: Generate Manifest
         run: go run gen_manifest.go
