@@ -6,6 +6,7 @@ on:
       - 'sdk/**'
       - 'ddi/**'
       - 'gen_manifest.go'
+      - '.github/workflows/update-manifest.yml'
   workflow_dispatch:
 
 permissions:
