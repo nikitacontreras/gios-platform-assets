@@ -82,11 +82,17 @@ jobs:
         run: |
           echo "Preparing assets for 'latest' release..."
           
-          # Ensure release exists
-          gh release view latest || gh release create latest --title "Latest Assets" --notes "Automated asset update"
+          # Ensure release exists and is PUBLISHED (not draft)
+          if ! gh release view latest >/dev/null 2>&1; then
+            echo "Creating new release..."
+            gh release create latest --title "Latest Assets" --notes "Automated asset update"
+          else
+            echo "Ensuring existing release is published..."
+            gh release edit latest --draft=false
+          fi
           
           # Find all files and upload them handling spaces correctly
-          # Using -print0 and xargs -0 is the most robust way to handle spaces/parentheses in filenames
           find sdk ddi -type f \( -name "*.tar.xz" -o -name "*.tar.xz.signature" -o -name "*.zip" -o -name "*.signature" \) -print0 | xargs -0 -P 4 -I {} sh -c 'echo "Uploading {}..."; gh release upload latest "{}" --clobber'
+
 
 
