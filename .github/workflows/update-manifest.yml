@@ -67,11 +67,14 @@ jobs:
         with:
           tag_name: latest
           files: |
-            sdk/**/*.tar.xz
-            sdk/**/*.tar.xz.signature
-            ddi/**/*.zip
-            ddi/**/*.signature
+            sdk/iPhoneOS/*.tar.xz*
+            sdk/AppleTVOS/*.tar.xz*
+            sdk/WatchOS/*.tar.xz*
+            ddi/iPhoneOS/*.zip*
+            ddi/AppleTVOS/*.zip*
+            ddi/WatchOS/*.zip*
           prerelease: false
           make_latest: true
+          fail_on_unmatched_files: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

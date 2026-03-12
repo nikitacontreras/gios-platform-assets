@@ -53,6 +53,7 @@ func main() {
 	manifest := Manifest{}
 	// Usamos la URL de los release assets para las descargas reales
 	// assets.json se mantendrá en raw github para consulta rápida
+	// IMPORTANTE: Se apunta a /latest/download/ para que el link siempre obtenga la última versión subida
 	releaseBaseURL := "https://github.com/nikitacontreras/gios-platform-assets/releases/latest/download"
 	platforms := []string{"iPhoneOS", "AppleTVOS", "WatchOS"}
 
