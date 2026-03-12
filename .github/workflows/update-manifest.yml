@@ -18,7 +18,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
+
+      - name: Cache compressed assets
+        uses: actions/cache@v4
+        with:
+          path: |
+            sdk/**/*.tar.xz
+            sdk/**/*.tar.xz.signature
+            ddi/**/*.signature
+          key: assets-cache-${{ hashFiles('sdk/**/*.sdk', 'ddi/**/*.zip') }}
+          restore-keys: |
+            assets-cache-
 
       - name: Set up Go
         uses: actions/setup-go@v5
