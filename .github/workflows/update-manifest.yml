@@ -85,17 +85,8 @@ jobs:
           # Ensure release exists
           gh release view latest || gh release create latest --title "Latest Assets" --notes "Automated asset update"
           
-          # Find all files to upload
-          FILES=$(find sdk ddi -name "*.tar.xz" -o -name "*.tar.xz.signature" -o -name "*.zip" -o -name "*.signature")
-          
-          if [ -n "$FILES" ]; then
-            for file in $FILES; do
-              echo "Uploading $file..."
-              # Using --clobber to overwrite if exists, which is more reliable than deletion
-              gh release upload latest "$file" --clobber
-            done
-          else
-            echo "No assets found to upload."
-            exit 1
-          fi
+          # Find all files and upload them handling spaces correctly
+          # Using -print0 and xargs -0 is the most robust way to handle spaces/parentheses in filenames
+          find sdk ddi -type f \( -name "*.tar.xz" -o -name "*.tar.xz.signature" -o -name "*.zip" -o -name "*.signature" \) -print0 | xargs -0 -P 4 -I {} sh -c 'echo "Uploading {}..."; gh release upload latest "{}" --clobber'
+
 
